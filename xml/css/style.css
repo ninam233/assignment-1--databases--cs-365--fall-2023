@@ -1,0 +1,113 @@
+:root {
+  display: block;
+  padding: 15px;
+}
+
+:root::before {
+  content: 'Student Directory';
+  text-align: center;
+  margin: 20px;
+}
+
+student {
+  display: block;
+  border: 1px solid;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+student::before {
+  content: 'Student ID: ' attr(StudentID);
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+student,
+FirstName,
+MiddleName,
+LastName,
+PreferredName,
+Email,
+Phone,
+Year,
+GPA,
+Major,
+Minor,
+Status,
+Advisor,
+EnrollDate,
+GradDate {
+  display: block;
+  margin-bottom: 10px;
+}
+
+FirstName::before {
+  content: 'First Name: ';
+  font-weight: bold;
+}
+
+MiddleName::before {
+  content: 'Middle Name: ';
+  font-weight: bold;
+}
+
+LastName::before {
+  content: 'Last Name: ';
+  font-weight: bold;
+}
+
+PreferredName::before {
+  content: 'Preferred Name: ';
+  font-weight: bold;
+}
+
+Email::before {
+  content: 'Email: ';
+  font-weight: bold;
+}
+
+Phone::before {
+  content: 'Phone #: ';
+  font-weight: bold;
+}
+
+Year::before {
+  content: 'Year: ';
+  font-weight: bold;
+}
+
+GPA::before {
+  content: 'GPA: ';
+  font-weight: bold;
+}
+
+Major::before {
+  content: 'Major: ';
+  font-weight: bold;
+}
+
+Minor::before {
+  content: 'Minor: ';
+  font-weight: bold;
+}
+
+Status::before {
+  content: 'Status: ';
+  font-weight: bold;
+}
+
+Advisor::before {
+  content: 'Advisor: ';
+  font-weight: bold;
+}
+
+EnrollDate::before {
+  content: 'Enrollment Date: ';
+  font-weight: bold;
+}
+
+GradDate::before {
+  content: 'Graduation Date: ';
+  font-weight: bold;
+}

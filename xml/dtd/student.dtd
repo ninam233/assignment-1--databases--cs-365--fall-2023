@@ -1,0 +1,52 @@
+<!-- The root element: students -->
+<!ELEMENT students (student+)>
+
+<!-- Each student element contains detailed information -->
+<!ELEMENT student (FirstName, MiddleName, LastName, PreferredName, Email, Phone,
+    Year, GPA, Major, Minor, Status, Advisor, EnrollDate, GradDate)>
+
+<!-- First name of the student -->
+<!ELEMENT FirstName (#PCDATA)>
+
+<!-- Optional middle name of the student -->
+<!ELEMENT MiddleName (#PCDATA)>
+
+<!-- Last name of the student -->
+<!ELEMENT LastName (#PCDATA)>
+
+<!-- Preferred name to address the student -->
+<!ELEMENT PreferredName (#PCDATA)>
+
+<!-- Email address of the student -->
+<!ELEMENT Email (#PCDATA)>
+
+<!-- Phone number of the student -->
+<!ELEMENT Phone (#PCDATA)>
+
+<!-- Current year of enrollment -->
+<!ELEMENT Year (#PCDATA)>
+
+<!-- Grade Point Average of the student -->
+<!ELEMENT GPA (#PCDATA)>
+
+<!-- Major field of study -->
+<!ELEMENT Major (#PCDATA)>
+
+<!-- Optional minor field of study -->
+<!ELEMENT Minor (#PCDATA)>
+
+<!-- Enrollment status: Full-time, Part-time, Graduated, Withdrawn -->
+<!ELEMENT Status (#PCDATA)>
+
+<!-- Advisor's name for the student -->
+<!ELEMENT Advisor (#PCDATA)>
+
+<!-- Date of initial enrollment -->
+<!ELEMENT EnrollDate (#PCDATA)>
+
+<!-- Expected graduation date -->
+<!ELEMENT GradDate (#PCDATA)>
+
+<!-- Attributes -->
+<!ATTLIST student
+    StudentID CDATA #REQUIRED><!-- Unique student identifier -->
